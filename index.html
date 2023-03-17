@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/harjoitus.css" rel="stylesheet">
 </head>
 <body>
-    
+    <h1>Lukuja</h1>
+    <h2>Tulosta lukuja</h2>
+    <form id="oma">
+        Kirjoita luku 1.<br> 
+        <input type="number" id="luku1"> <br>
+        Kirjoita luku 2. <br>
+        <input type="number" id="luku2"> <br>
+        <button type="button" onclick="tulostaluvut(oma.luku1.value, oma.luku2.value)">
+        Tulosta luvut <br>
+        </button>
+        <button type="button" onclick="laskeluvut()">
+        Yhteenlasku <br>
+        </button>
+    </form>
+    <div id="results"></div>
+    <div id="sum"></div>   
+    <script src="js/harjoitus.js"></script>    
 </body>
 </html>
